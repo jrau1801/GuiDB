@@ -29,48 +29,4 @@ public class JDBCHelper {
         return connection;
     }
 
-    /**
-     * Closes Connection to database
-     *
-     * @param con Open Connection to the Database
-     */
-    public static void closeConnection(Connection con) {
-        if (con != null) {
-            try {
-                con.close();
-            } catch (SQLException e) {
-
-            }
-        }
-    }
-
-    /**
-     * Closes given PreparedStatement object
-     *
-     * @param stmt given prepared statement
-     */
-    public static void closePreparedStatement(PreparedStatement stmt) {
-        if (stmt != null) {
-            try {
-                stmt.close();
-            } catch (SQLException e) {
-
-            }
-        }
-    }
-
-    /**
-     * Closes given ResultSet
-     *
-     * @param rs Given ResultSet
-     */
-    public static void closeResultSet(ResultSet rs) {
-        if (rs != null) {
-            try {
-                rs.close();
-            } catch (SQLException e) {
-
-            }
-        }
-    }
 }

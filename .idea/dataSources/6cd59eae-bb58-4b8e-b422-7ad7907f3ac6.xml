@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@rs03-db-inf-min.ad.fh-bielefeld.de">
-  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.45">
+  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.38">
     <root id="1">
       <IntrospectionLevel>3</IntrospectionLevel>
       <ServerVersion>19.0.0.0.0</ServerVersion>
@@ -9,9 +9,9 @@
     <schema id="2" parent="1" name="AGERIKHANOV">
       <CreatedTimestamp>2023-01-09.20:05:52</CreatedTimestamp>
       <Current>1</Current>
-      <IntrospectionL1Timestamp>2023-01-10.00:58:33</IntrospectionL1Timestamp>
-      <IntrospectionL2Timestamp>2023-01-10.00:58:33</IntrospectionL2Timestamp>
-      <IntrospectionL3Timestamp>2023-01-10.00:58:33</IntrospectionL3Timestamp>
+      <IntrospectionL1Timestamp>2023-01-10.03:24:21</IntrospectionL1Timestamp>
+      <IntrospectionL2Timestamp>2023-01-10.03:24:21</IntrospectionL2Timestamp>
+      <IntrospectionL3Timestamp>2023-01-10.03:24:21</IntrospectionL3Timestamp>
       <IntrospectionVersion>200820</IntrospectionVersion>
       <ModifiedTimestamp>2023-01-10.00:58:33</ModifiedTimestamp>
       <ObjectId>370</ObjectId>
@@ -310,9 +310,9 @@
     <schema id="100" parent="1" name="PUBLIC">
       <CreatedTimestamp>2019-05-30.05:10:17</CreatedTimestamp>
       <DbLinksHash>383487358</DbLinksHash>
-      <IntrospectionL1Timestamp>2023-01-10.00:58:33</IntrospectionL1Timestamp>
-      <IntrospectionL2Timestamp>2023-01-10.00:58:33</IntrospectionL2Timestamp>
-      <IntrospectionL3Timestamp>2023-01-10.00:58:33</IntrospectionL3Timestamp>
+      <IntrospectionL1Timestamp>2023-01-10.03:24:21</IntrospectionL1Timestamp>
+      <IntrospectionL2Timestamp>2023-01-10.03:24:21</IntrospectionL2Timestamp>
+      <IntrospectionL3Timestamp>2023-01-10.03:24:21</IntrospectionL3Timestamp>
       <IntrospectionVersion>200820</IntrospectionVersion>
       <ModifiedTimestamp>2020-07-20.17:21:26</ModifiedTimestamp>
       <ObjectId>1</ObjectId>
@@ -57696,22 +57696,22 @@
       <TargetObjectParentName>SYS</TargetObjectParentName>
     </synonym>
     <column id="7366" parent="246" name="ADRESSE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7367" parent="246" name="STADT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7368" parent="246" name="STRASSENAME">
-      <DasType>VARCHAR2(65 byte)|0s</DasType>
+      <DataType>VARCHAR2(65 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="7369" parent="246" name="HAUSNUMMER">
-      <DasType>VARCHAR2(15 byte)|0s</DasType>
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
@@ -57732,23 +57732,24 @@
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7372" parent="246" name="PK_ADRESSE">
+      <ColNames>ADRESSE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:52</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_ADRESSE</UnderlyingIndexName>
     </key>
     <column id="7373" parent="247" name="ALLERGIE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7374" parent="247" name="BEZEICHNUNG">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7375" parent="247" name="ALLERGENE">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -57761,23 +57762,24 @@
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7377" parent="247" name="PK_ALLERGIE">
+      <ColNames>ALLERGIE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:52</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_ALLERGIE</UnderlyingIndexName>
     </key>
     <column id="7378" parent="248" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7379" parent="248" name="MEDIKATION_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7380" parent="248" name="DOSIS">
-      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
       <Position>3</Position>
     </column>
     <foreign-key id="7381" parent="248" name="SYS_C00202080">
@@ -57806,23 +57808,25 @@ MEDIKATION_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7384" parent="248" name="PK_BEKOMMT">
+      <ColNames>PATIENT_ID
+MEDIKATION_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:52</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_BEKOMMT</UnderlyingIndexName>
     </key>
     <column id="7385" parent="249" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7386" parent="249" name="MEDIKATION_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7387" parent="249" name="DOSIS">
-      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
       <Position>3</Position>
     </column>
     <foreign-key id="7388" parent="249" name="SYS_C00202083">
@@ -57851,23 +57855,25 @@ MEDIKATION_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7391" parent="249" name="PK_BEKOMMT2">
+      <ColNames>PATIENT_ID
+MEDIKATION_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_BEKOMMT2</UnderlyingIndexName>
     </key>
     <column id="7392" parent="250" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7393" parent="250" name="K_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7394" parent="250" name="DAUER">
-      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
       <Position>3</Position>
     </column>
     <foreign-key id="7395" parent="250" name="SYS_C00202084">
@@ -57896,23 +57902,25 @@ K_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7398" parent="250" name="PK_BETRIFFT">
+      <ColNames>PATIENT_ID
+K_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_BETRIFFT</UnderlyingIndexName>
     </key>
     <column id="7399" parent="251" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7400" parent="251" name="K_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7401" parent="251" name="DAUER">
-      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
       <Position>3</Position>
     </column>
     <foreign-key id="7402" parent="251" name="SYS_C00202087">
@@ -57941,18 +57949,20 @@ K_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7405" parent="251" name="PK_BETRIFFT2">
+      <ColNames>PATIENT_ID
+K_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_BETRIFFT2</UnderlyingIndexName>
     </key>
     <column id="7406" parent="252" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7407" parent="252" name="ALLERGIE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
@@ -57982,18 +57992,20 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7411" parent="252" name="PK_BETROFFEN_VON">
+      <ColNames>PATIENT_ID
+ALLERGIE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_BETROFFEN_VON</UnderlyingIndexName>
     </key>
     <column id="7412" parent="253" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7413" parent="253" name="ALLERGIE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
@@ -58023,27 +58035,29 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7417" parent="253" name="PK_BETROFFEN_VON2">
+      <ColNames>PATIENT_ID
+ALLERGIE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:54</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_BETROFFEN_VON2</UnderlyingIndexName>
     </key>
     <column id="7418" parent="254" name="STAAT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7419" parent="254" name="LAND_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7420" parent="254" name="STATE_CODE">
-      <DasType>VARCHAR2(10 byte)|0s</DasType>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
       <Position>3</Position>
     </column>
     <column id="7421" parent="254" name="BUNDESLANDNAME">
-      <DasType>VARCHAR2(65 byte)|0s</DasType>
+      <DataType>VARCHAR2(65 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
@@ -58064,76 +58078,77 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7424" parent="254" name="PK_BUNDESLAND">
+      <ColNames>STAAT_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:54</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_BUNDESLAND</UnderlyingIndexName>
     </key>
     <column id="7425" parent="255" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7426" parent="255" name="ADRESSE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7427" parent="255" name="T_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="7428" parent="255" name="VORNAME">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="7429" parent="255" name="NACHNAME">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="7430" parent="255" name="ALTER">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
     <column id="7431" parent="255" name="GESCHLECHT">
-      <DasType>VARCHAR2(15 byte)|0s</DasType>
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
     <column id="7432" parent="255" name="BLUTGRUPPE">
-      <DasType>VARCHAR2(10 byte)|0s</DasType>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
     <column id="7433" parent="255" name="KONFESSION">
-      <DasType>VARCHAR2(25 byte)|0s</DasType>
+      <DataType>VARCHAR2(25 byte)|0s</DataType>
       <Position>9</Position>
     </column>
     <column id="7434" parent="255" name="CREATED_AT">
-      <DasType>DATE|0s</DasType>
+      <DataType>DATE|0s</DataType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
     <column id="7435" parent="255" name="PRIORITAET">
-      <DasType>VARCHAR2(25 byte)|0s</DasType>
+      <DataType>VARCHAR2(25 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
     <column id="7436" parent="255" name="IMMUNISIERT">
-      <DasType>VARCHAR2(25 byte)|0s</DasType>
+      <DataType>VARCHAR2(25 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>12</Position>
     </column>
     <column id="7437" parent="255" name="GEWEBETYP">
-      <DasType>VARCHAR2(40 byte)|0s</DasType>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
       <Position>13</Position>
     </column>
     <column id="7438" parent="255" name="ORGANTYP">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>14</Position>
     </column>
@@ -58162,28 +58177,29 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7442" parent="255" name="PK_EMPFANGER">
+      <ColNames>PATIENT_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:54</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_EMPFANGER</UnderlyingIndexName>
     </key>
     <column id="7443" parent="256" name="GEWEBEPROBE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7444" parent="256" name="LABOR_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7445" parent="256" name="ERGEBNIS">
-      <DasType>VARCHAR2(40 byte)|0s</DasType>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="7446" parent="256" name="CREATED_AT">
-      <DasType>DATE|0s</DasType>
+      <DataType>DATE|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
@@ -58204,18 +58220,19 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7449" parent="256" name="PK_GEWEBEPROBE">
+      <ColNames>GEWEBEPROBE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:55</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_GEWEBEPROBE</UnderlyingIndexName>
     </key>
     <column id="7450" parent="257" name="K_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7451" parent="257" name="KRANKHEITSBEZEICHNUNG">
-      <DasType>VARCHAR2(40 byte)|0s</DasType>
+      <DataType>VARCHAR2(40 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
@@ -58228,23 +58245,24 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7453" parent="257" name="PK_KRANKHEIT">
+      <ColNames>K_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:55</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_KRANKHEIT</UnderlyingIndexName>
     </key>
     <column id="7454" parent="258" name="LABOR_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7455" parent="258" name="ADRESSE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7456" parent="258" name="LABORNAME">
-      <DasType>VARCHAR2(65 byte)|0s</DasType>
+      <DataType>VARCHAR2(65 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -58265,23 +58283,24 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7459" parent="258" name="PK_LABOR">
+      <ColNames>LABOR_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:55</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_LABOR</UnderlyingIndexName>
     </key>
     <column id="7460" parent="259" name="LAND_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7461" parent="259" name="KUERZEL">
-      <DasType>VARCHAR2(10 byte)|0s</DasType>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7462" parent="259" name="LAND_NAME">
-      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -58294,18 +58313,19 @@ ALLERGIE_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7464" parent="259" name="PK_LAND">
+      <ColNames>LAND_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:55</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_LAND</UnderlyingIndexName>
     </key>
     <column id="7465" parent="260" name="STADT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7466" parent="260" name="STAAT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
@@ -58335,23 +58355,25 @@ STAAT_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7470" parent="260" name="PK_LIEGT_IN">
+      <ColNames>STADT_ID
+STAAT_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:56</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_LIEGT_IN</UnderlyingIndexName>
     </key>
     <column id="7471" parent="261" name="MEDIKATION_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7472" parent="261" name="MARKE">
-      <DasType>VARCHAR2(70 byte)|0s</DasType>
+      <DataType>VARCHAR2(70 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7473" parent="261" name="MEDIKATIONSBEZEICHNUNG">
-      <DasType>VARCHAR2(70 byte)|0s</DasType>
+      <DataType>VARCHAR2(70 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -58364,41 +58386,42 @@ STAAT_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7475" parent="261" name="PK_MEDIKATION">
+      <ColNames>MEDIKATION_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:56</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_MEDIKATION</UnderlyingIndexName>
     </key>
     <column id="7476" parent="262" name="ORGAN_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7477" parent="262" name="GEWEBEPROBE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <Position>2</Position>
     </column>
     <column id="7478" parent="262" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="7479" parent="262" name="EMPPATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <Position>4</Position>
     </column>
     <column id="7480" parent="262" name="ORGANBEZEICHNUNG">
-      <DasType>VARCHAR2(70 byte)|0s</DasType>
+      <DataType>VARCHAR2(70 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="7481" parent="262" name="ZUSTAND">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
     <column id="7482" parent="262" name="ENTNAHME_ZEIT">
-      <DasType>DATE|0s</DasType>
+      <DataType>DATE|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
@@ -58435,62 +58458,63 @@ STAAT_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7487" parent="262" name="PK_ORGAN">
+      <ColNames>ORGAN_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:56</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_ORGAN</UnderlyingIndexName>
     </key>
     <column id="7488" parent="263" name="PATIENT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7489" parent="263" name="ADRESSE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7490" parent="263" name="T_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="7491" parent="263" name="VORNAME">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="7492" parent="263" name="NACHNAME">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="7493" parent="263" name="ALTER">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
     <column id="7494" parent="263" name="GESCHLECHT">
-      <DasType>VARCHAR2(15 byte)|0s</DasType>
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
     <column id="7495" parent="263" name="BLUTGRUPPE">
-      <DasType>VARCHAR2(10 byte)|0s</DasType>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
     <column id="7496" parent="263" name="KONFESSION">
-      <DasType>VARCHAR2(25 byte)|0s</DasType>
+      <DataType>VARCHAR2(25 byte)|0s</DataType>
       <Position>9</Position>
     </column>
     <column id="7497" parent="263" name="CREATED_AT">
-      <DasType>DATE|0s</DasType>
+      <DataType>DATE|0s</DataType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
     <column id="7498" parent="263" name="TODESZEITPUNKT">
-      <DasType>DATE|0s</DasType>
+      <DataType>DATE|0s</DataType>
       <Position>11</Position>
     </column>
     <foreign-key id="7499" parent="263" name="SYS_C00202103">
@@ -58518,23 +58542,24 @@ STAAT_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7502" parent="263" name="PK_SPENDER">
+      <ColNames>PATIENT_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:57</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_SPENDER</UnderlyingIndexName>
     </key>
     <column id="7503" parent="264" name="STADT_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7504" parent="264" name="STADTNAME">
-      <DasType>VARCHAR2(65 byte)|0s</DasType>
+      <DataType>VARCHAR2(65 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7505" parent="264" name="PLZ">
-      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -58547,28 +58572,29 @@ STAAT_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7507" parent="264" name="PK_STADT">
+      <ColNames>STADT_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:57</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_STADT</UnderlyingIndexName>
     </key>
     <column id="7508" parent="265" name="T_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="7509" parent="265" name="ADRESSE_ID">
-      <DasType>NUMBER(*)|0s</DasType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="7510" parent="265" name="TELEFONNUMMER">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="7511" parent="265" name="NAME">
-      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
@@ -58589,6 +58615,7 @@ STAAT_ID</ColNames>
       <TablespaceName>DBLAB</TablespaceName>
     </index>
     <key id="7514" parent="265" name="PK_TRANSPLANTATIONSZENTRUM">
+      <ColNames>T_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2023-01-09.20:05:57</ModifiedTimestamp>
       <Primary>1</Primary>
